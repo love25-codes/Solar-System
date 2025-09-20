@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(https://wallpapercave.com/wp/wp4865484.jpg);
+            background-size: cover;
+           
+        }
+        ::-webkit-scrollbar {
+  display: none;
+}
+        .container{
+            height: 1200px;
+           overflow: hidden;
+           scrollbar-width: none;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+           animation: solar 60s linear 0s infinite ;
+           position: relative;
+        }
+        .sun{
+            width: 290px;
+            height: 290px;
+            border-radius: 50%;
+            /* border: 2px solid white; */
+            position: fixed;
+            box-shadow: 0 0 40px 5px red,
+            0 0 15px 4px orange,
+            1px 2px 12px 2px yellow;
+            /* background: linear-gradient(360deg,rgb(209, 19, 19), rgb(238, 185, 11),rgb(204, 133, 2),rgb(244, 35, 35),rgb(214, 100, 13)); */
+             filter: blur(4px); 
+            background:linear-gradient(180deg,#FFFFFF,#FFE484,#FFCC33,#FC9601,#D14009) ;
+        }
+        @keyframes solar {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+        .planet1{
+               /* border: 2px solid black; */
+               width: 70px;
+               height: 70px;
+               border-radius: 50%;
+               transform: translate(-230px);
+               /* background: url(https://img.freepik.com/premium-psd/mercury-planet-isolated-transparent-background_220739-132551.jpg); */
+              background: url(https://www.bing.com/th/id/OIP._YlpEwFyZ-cr_tIqlXBuPgHaHa?w=192&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2);
+               background-size: cover;
+               position: absolute;
+        }
+        .planet2{
+            /* border: 2px solid white; */
+            width: 130px;
+            height: 130px;
+            background: url(https://th.bing.com/th/id/OIP.HqscB56x6d-nZ7xHPhxx8AHaHa?w=199&h=199&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3);
+            background-position: center;
+            /* background-size: cover; */
+            border-radius: 50%;
+            transform: translate(298px,-190px);
+            position: absolute;
+        }
+        .planet3{
+             width: 170px;
+            height: 170px;
+            background: url(https://th.bing.com/th/id/OIP.zeYwNp-xsQ7yYHXuH_eBkwHaHa?w=186&h=186&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3);
+            /* background-size: cover; */
+            background-position: center;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(500px,270px);
+
+        }
+        .planet4{
+             width: 110px;
+               height: 110px;
+               border-radius: 50%;
+               background: url(https://tse3.mm.bing.net/th/id/OIP.XzVpKIkqaTOatwmaV7o2AwHaFE?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+               /* background-size: 111% auto; */
+               background-position: center;
+               position: absolute;
+               transform: translate(-600px,30px);
+
+        }
+        .planet5{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: url(https://tse3.mm.bing.net/th/id/OIP.U4Q3Hsrwm2AscI_kpqonGgHaHa?w=176&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3);
+            background-size: 128% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            transform: translate(-700px,-280px);
+        }
+        .planet6{
+            width: 440px;
+            height: 700px;
+            border-radius: 80%;
+            background: url(saturn-png-8.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            transform: translate(950px);
+            position: absolute;
+        }
+        .planet7{
+            position: absolute;
+            width:140px;
+            height: 140px;
+            border-radius: 50%;
+            background: url(https://tse3.mm.bing.net/th/id/OIP.KuFeNtSjqOrxqqGm-PKbiAHaFm?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+            background-position: center;
+            transform: translate(-980px,400px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sun"></div>
+        <div class="planet1"></div>
+        <div class="planet2"></div>
+        <div class="planet3"></div>
+        <div class="planet4"></div>
+        <div class="planet5"></div>
+        <div class="planet6"></div>
+        <div class="planet7"></div>
+    </div>
+</body>
+</html>
